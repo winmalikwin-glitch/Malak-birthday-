@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb,#a18cd1);
+    background-size:400% 400%;
+    animation:bg 8s infinite alternate;
+    font-family:Tahoma;
+}
+
+@keyframes bg{
+    from{background-position:left;}
+    to{background-position:right;}
+}
+
+.container{
+    text-align:center;
+    color:white;
+}
+
+h1{
+    font-size:50px;
+}
+
+h2{
+    font-size:35px;
+    text-shadow:0 0 15px gold;
+}
+
+.cake{
+    font-size:100px;
+    animation:bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+button{
+    margin-top:20px;
+    padding:15px 35px;
+    border:none;
+    border-radius:15px;
+    background:#ff4081;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e91e63;
+}
+
+#message{
+    margin-top:20px;
+    font-size:22px;
+}
